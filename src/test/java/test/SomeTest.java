@@ -24,32 +24,42 @@
 
 package test;
 
-import org.junit.Test;
+// import org.junit.Test;
+import junit.framework.TestCase;
 
-public class SomeTest extends Base {
+public class SomeTest extends TestCase {
 
-    @Test public void test1() {
+     public void test1() {
         run();
     }
 
-    @Test public void test2() {
+     public void test2() {
         run();
     }
 
-    @Test public void test3() {
+     public void test3() {
         run();
     }
 
-    @Test public void test4() {
+     public void test4() {
         run();
     }
 
-    @Test public void test5() {
+     public void test5() {
         run();
     }
 
-    @Test public void test6() {
+     public void test6() {
         run();
+    }
+
+    protected void run() {
+        double r = Math.random();
+        if (r < 0.1) {
+            fail("oops");
+        } else if (r < 0.2) {
+            throw new AssumptionViolatedException("skipping");
+        }
     }
 
 }
