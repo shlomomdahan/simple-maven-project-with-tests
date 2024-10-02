@@ -26,6 +26,8 @@ package test;
 
 // import org.junit.Test;
 import junit.framework.TestCase;
+import static org.junit.Assert.*;
+import org.junit.internal.AssumptionViolatedException;
 
 public class SomeTest extends TestCase {
 
