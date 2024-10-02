@@ -30,30 +30,30 @@ import junit.framework.TestCase;
 public class SomeTest extends TestCase {
 
      public void test1() {
-        run();
+        run2();
     }
 
      public void test2() {
-        run();
+        run2();
     }
 
      public void test3() {
-        run();
+        run2();
     }
 
      public void test4() {
-        run();
+        run2();
     }
 
      public void test5() {
-        run();
+        run2();
     }
 
      public void test6() {
-        run();
+        run2();
     }
 
-    protected void run() {
+    protected void run2() {
         double r = Math.random();
         if (r < 0.1) {
             fail("oops");
